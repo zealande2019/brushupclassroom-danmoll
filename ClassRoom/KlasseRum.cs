@@ -8,13 +8,29 @@ namespace ClassRoom
 {
     class KlasseRum
     {
-        string KlasseNavn;
-        List<Studerende> Klasseliste;
-        DateTime SemesterStart;
+        //Instance fields
+        string _klasseNavn;
+        List<Studerende> _klasseListe;
+        DateTime _semesterStart;
 
-        public KlasseRum(string navn, List<Studerende> elev, DateTime semStart)
+        //Properties
+        public string KlasseNavn {
+            get { return _klasseNavn; }
+            set { _klasseNavn = value; }
+        }
+        public List<Studerende> KlasseListe {
+            get { return _klasseListe; }
+        }
+        DateTime SemesterStart {
+            get { return _semesterStart; }
+            set { _semesterStart = value; }
+        }
+
+        //Constructor
+        public KlasseRum()
         {
 
         }
+
     }
 }

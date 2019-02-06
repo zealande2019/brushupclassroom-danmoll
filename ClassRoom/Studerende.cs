@@ -8,15 +8,17 @@ namespace ClassRoom
 {
     class Studerende
     {
-        string Name;
-        int Birthmonth;
-        int Birthday;
+        //Instance fields
+        string _name;
+        int _bmonth;
+        int _bday;
 
+        //Constructor
         public Studerende(string navn, int bmonth, int bday)
         {
-            Name = navn;
-            Birthmonth = bmonth;
-            Birthday = bday;
+            _name = navn;
+            _bmonth = bmonth;
+            _bday = bday;
         }
     }
 }
