@@ -13,12 +13,29 @@ namespace ClassRoom
         int _bmonth;
         int _bday;
 
+        //Properties
+        public string Name {
+            get { return _name; }
+            private set { _name = value; }
+        }
+
+        public int BMonth {
+            get { return _bmonth; }
+            private set { _bmonth = value; }
+        }
+
+        public int BDay
+        {
+            get { return _bday; }
+            private set { _bday = value; }
+        }
+
         //Constructor
         public Studerende(string navn, int bmonth, int bday)
         {
-            _name = navn;
-            _bmonth = bmonth;
-            _bday = bday;
+            Name = navn;
+            BMonth = bmonth;
+            BDay = bday;
         }
     }
 }
