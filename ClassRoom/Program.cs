@@ -18,6 +18,13 @@ namespace ClassRoom
             klasseRum.KlasseListe.Add(elev1);
             klasseRum.KlasseListe.Add(elev2);
 
+            Console.WriteLine("Klasse: " + klasseRum.KlasseNavn.ToString());
+            Console.WriteLine("Indeholder: ");
+            foreach (var item in klasseRum.KlasseListe)
+            {
+                Console.WriteLine("Navn: " + item.Name + ", har fødselsdato d. " + item.BDay + ". i " + item.BMonth + "." );
+            }
+            Console.ReadLine();
         }
     }
 }

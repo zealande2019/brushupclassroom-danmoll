@@ -10,7 +10,7 @@ namespace ClassRoom
     {
         //Instance fields
         string _klasseNavn;
-        List<Studerende> _klasseListe;
+        List<Studerende> _klasseListe = new List<Studerende>();
         DateTime _semesterStart;
 
         //Properties
